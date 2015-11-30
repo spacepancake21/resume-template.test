@@ -30,6 +30,11 @@ body {
   }
 }
 
+.headline {
+  font: italic 22px "Cambria", sans-serif;
+  margin-bottom: 40px;
+}
+
 .logo {
   padding: 22px 32px 22px 32px;
   border-bottom: 1px solid #d0d0d0;
@@ -170,7 +175,7 @@ body {
   padding: 64px 35px 24px;
   box-shadow: 0 10px 5px -8px #e3e3e3;
   position: relative;
-  margin: 0 0 42px 0;
+  margin: 0 0 62px 0;
 }
 
 .description__text {
@@ -199,6 +204,49 @@ body {
   left: 0;
   right: 0;
   background: linear-gradient(to right, #f9f8f8 1%, #dcd3d3 50%, #f9f8f8 100%);
+}
+
+.folio {
+  padding: 50px 56px 10px 68px;
+}
+
+.folio:after {
+  content: "";
+  display: inline-block;
+  overflow: hidden;
+  visibility: hidden;
+  height: 0;
+  width: 100%;
+}
+
+.folio__item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 50px 0;
+  width: 100%;
+}
+
+.folio__link {
+  display: block;
+}
+
+.folio__img {
+  width: 100%;
+}
+
+@media screen and (min-width: 630px) {
+  .folio {
+    text-align: justify;
+  }
+  .folio__item {
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .folio__item {
+    width: 24%;
+  }
 }
 
 /*# sourceMappingURL=maps/main.css.map */
