@@ -32,7 +32,7 @@ var src = {
 	jade: 'app/templates/*/*.jade',
 	jadeMain: 'app/templates/pages/*.jade',
 
-	css:  'app/css/',
+	css:  'app/css/*.css',
 	sass: 'app/sass/*.sass',
 	sassMain: 'app/sass/main.sass'
 };
@@ -151,7 +151,7 @@ gulp.task('sass', function() {
 		}))
 		.pipe(sourcemaps.write('./maps'))
 		.on('error', log)
-		.pipe(gulp.dest(src.css))
+		.pipe(gulp.dest('app/css/'))
 		.pipe(reload({stream: true}));
 });
 

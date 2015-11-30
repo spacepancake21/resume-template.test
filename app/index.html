@@ -34,15 +34,34 @@
     <!--[if lte IE 7]>
 <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.</p>
 <![endif]-->
-    <div class="wpapper">
+    <div class="wrapper">
       <div class="header">
-        <div class="logo"></div>
-        <div class="menu"></div>
+        <div class="logo">
+          <a href="javascript:void(0)" class="logo__link">
+            <p class="logo__title">Webfolio</p>
+            <p class="logo__text">My Web Design Portfolio</p>
+          </a>
+        </div>
+        <div class="menu">
+          <ul class="menu__inner">
+            <li class="menu__item menu__item_active"><a href="javascript:void(0)" title="Home" class="menu__link">Home</a></li>
+            <li class="menu__item"><a href="javascript:void(0)" title="About me" class="menu__link">About me</a></li>
+            <li class="menu__item"><a href="javascript:void(0)" title="Works" class="menu__link">Works</a></li>
+            <li class="menu__item"><a href="javascript:void(0)" title="Resume" class="menu__link">Resume</a></li>
+          </ul>
+        </div>
       </div>
       <div class="description"></div>
       <div class="folio"></div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="footer__inner"></div>
+    </div>
+    <!-- build:js js/vendor.min.js -->
+    <!-- bower:js-->
+    <!--[if lte IE 8]><script src="bower/jquery/dist/jquery.js"></script><script src="bower/selectivizr/selectivizr.js"></script><script src="bower/css3-mediaqueries-js/css3-mediaqueries.js"></script><![endif]-->
+    <!-- endbower-->
+    <!-- endbuild -->
   </body>
 
 </html>

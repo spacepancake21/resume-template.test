@@ -4,6 +4,8 @@
   "dependencies": {
     "jquery": "1",
     "normalize-css": "normalize.css#~3.0.3",
-    "modernizr": "2"
+    "modernizr": "2",
+    "selectivizr": "~1.0.2",
+    "css3-mediaqueries-js": "~1.0.0"
   }
 }
