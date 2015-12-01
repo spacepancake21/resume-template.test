@@ -32,6 +32,9 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .header {
+    margin-bottom: 47px;
+  }
   .header:after {
     content: '';
     display: block;
@@ -75,6 +78,7 @@ body {
     border-bottom: none;
     float: left;
     padding: 30px 0px 22px 18px;
+    margin: 0;
   }
 }
 
@@ -166,6 +170,7 @@ body {
   .menu {
     padding: 0 18px 0 0px;
     float: right;
+    margin: 0;
   }
   .menu__inner {
     text-align: center;
@@ -196,7 +201,7 @@ body {
 .description:before {
   content: "";
   display: block;
-  background: url("../img/design/desc_pancels.png") no-repeat center 0;
+  background: url("../img/design/desc_pencils.png") no-repeat center 0;
   width: 104px;
   height: 42px;
   position: absolute;
@@ -215,6 +220,12 @@ body {
   left: 0;
   right: 0;
   background: linear-gradient(to right, #f9f8f8 1%, #dcd3d3 50%, #f9f8f8 100%);
+}
+
+@media screen and (min-width: 1024px) {
+  .description {
+    padding: 64px 235px 24px;
+  }
 }
 
 .folio {
@@ -259,8 +270,12 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
+  .folio {
+    padding: 27px 33px 50px 57px;
+  }
   .folio__item {
-    width: 24%;
+    width: 22%;
+    margin: 0 0 30px 0;
   }
 }
 
@@ -283,16 +298,17 @@ body {
 }
 
 .footer__about-img-wrap {
+  box-sizing: content-box;
   float: left;
   height: 123px;
   border: 7px solid #fff;
   position: absolute;
-  top: -42px;
+  top: -60px;
   left: 62px;
 }
 
 .footer__about-info {
-  margin: 0 0 32px 200px;
+  margin: 0 0 32px 170px;
   padding: 14px 0 0 0;
 }
 
