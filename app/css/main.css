@@ -4,19 +4,30 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font: 16px/1 "PT Sans", sans-serif;
   color: #404040;
+  height: 100%;
 }
 
 .wrapper {
+  min-height: 100%;
   min-width: 320px;
 }
 
 @media screen and (min-width: 1024px) {
   .wrapper {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
+  }
+  .wrapper:after {
+    content: "";
+    height: 300px;
+    display: block;
   }
 }
 
@@ -230,6 +241,10 @@ body {
   display: block;
 }
 
+.folio__link:hover {
+  opacity: 0.7;
+}
+
 .folio__img {
   width: 100%;
 }
@@ -246,6 +261,234 @@ body {
 @media screen and (min-width: 1024px) {
   .folio__item {
     width: 24%;
+  }
+}
+
+.footer {
+  background: #d45e5e;
+  color: #fff;
+}
+
+.footer__inner {
+  position: relative;
+}
+
+.footer__about {
+  padding: 0 0 26px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.footer__about-img {
+  height: 100%;
+}
+
+.footer__about-img-wrap {
+  float: left;
+  height: 123px;
+  border: 7px solid #fff;
+  position: absolute;
+  top: -42px;
+  left: 62px;
+}
+
+.footer__about-info {
+  margin: 0 0 32px 200px;
+  padding: 14px 0 0 0;
+}
+
+.footer__about-name {
+  font: italic 28px "Cambria", sans-serif;
+  margin-bottom: 5px;
+}
+
+.footer__about-location {
+  font: italic 16px "PT Sans", sans-serif;
+  background: url("../img/icons/location_ico.png") no-repeat 0 center;
+  padding: 0px 0 0px 20px;
+}
+
+.footer__about-text {
+  line-height: 20px;
+  font-size: 14px;
+  margin: 0 40px 45px 60px;
+}
+
+.footer__socials {
+  margin: 0 0 0 62px;
+}
+
+.footer__socials-item {
+  display: inline-block;
+  font: 16px "PT Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+  padding: 18px 0 15px 56px;
+  margin: 0 65px 0 12px;
+}
+
+.footer__socials-item_twitter {
+  background: url("../img/icons/twitter_ico.png") no-repeat 0 center;
+}
+
+.footer__socials-item_dribble {
+  background: url("../img/icons/dribble_ico.png") no-repeat 0 center;
+}
+
+.footer__skills {
+  padding: 37px 0 70px 80px;
+}
+
+.footer__skills-headline {
+  font: 30px "Cambria", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer__skills-item {
+  font: 30px "PT Sans", sans-serif;
+}
+
+.footer__skills-title {
+  width: 42px;
+  display: inline-block;
+}
+
+.footer__skills-percent {
+  display: inline-block;
+  vertical-align: middle;
+  height: 16px;
+  width: 80%;
+  background: #e27878;
+  position: relative;
+}
+
+.footer__skills-percent:after {
+  content: "";
+  display: block;
+  background: #282828;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.footer__skills-percent_10:after {
+  width: 10%;
+}
+
+.footer__skills-percent_20:after {
+  width: 20%;
+}
+
+.footer__skills-percent_30:after {
+  width: 30%;
+}
+
+.footer__skills-percent_40:after {
+  width: 40%;
+}
+
+.footer__skills-percent_50:after {
+  width: 50%;
+}
+
+.footer__skills-percent_60:after {
+  width: 60%;
+}
+
+.footer__skills-percent_70:after {
+  width: 70%;
+}
+
+.footer__skills-percent_80:after {
+  width: 80%;
+}
+
+.footer__skills-percent_90:after {
+  width: 90%;
+}
+
+.footer__skills-percent_100:after {
+  width: 100%;
+}
+
+.footer__copy {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    margin: -300px auto 0;
+  }
+  .footer__inner {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 50px;
+    height: 262px;
+  }
+  .footer__inner:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+  .footer__about {
+    float: left;
+    width: 600px;
+    position: relative;
+    border-bottom: none;
+    padding: 0;
+  }
+  .footer__about-img-wrap {
+    left: 5px;
+  }
+  .footer__about-info {
+    margin: 0 0 32px 168px;
+  }
+  .footer__about-text {
+    margin: 0;
+  }
+  .footer__skills {
+    float: right;
+    padding: 55px 0 0 0;
+    width: 260px;
+  }
+  .footer__skills-headline {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .footer__skills-item {
+    margin-bottom: -14px;
+  }
+  .footer__skills-title {
+    font-size: 18px;
+    width: 27px;
+  }
+  .footer__skills-percent {
+    height: 10px;
+  }
+  .footer__socials {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 22px;
+  }
+  .footer__socials-item {
+    text-indent: -9999px;
+    margin: 0 17px 0 0;
+  }
+  .footer__copy {
+    display: block;
+    background: #282828;
+    height: 38px;
+  }
+  .footer__copy-inner {
+    width: 1024px;
+    margin: 0 auto;
+    font: 14px "PT Sans", sans-serif;
+    text-align: right;
+    padding: 0 15px 0 0;
+    line-height: 38px;
   }
 }
 
