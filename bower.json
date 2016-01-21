@@ -1,5 +1,8 @@
 {
-  "name": "Portfolio-Template",
+  "name": "Template",
+  "author": [
+    "Davydov Konstantin <davydov_k@mail.ru>"
+  ],
   "version": "1.0.0",
   "dependencies": {
     "jquery": "1",

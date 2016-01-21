@@ -1,5 +1,8 @@
 {
-  "name": "Portfolio-Template",
+  "name": "Template",
+  "author": [
+    "Davydov Konstantin <davydov_k@mail.ru>"
+  ],
   "version": "1.0.0",
   "devDependencies": {
     "browser-sync": "^2.10.0",
